@@ -1,0 +1,29 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.12.5",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.8.2",
+    "nuxt": "^2.14.12",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "vee-validate": "^3.4.5",
+    "vue-form-generator": "^2.3.4",
+    "vue-multiselect": "^2.1.6"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
