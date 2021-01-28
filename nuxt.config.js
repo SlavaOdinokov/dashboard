@@ -44,7 +44,12 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://auth.nuxtjs.org/
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+  ],
+
+  buildModules: [
+    // https://tailwindcss.com/
+    '@nuxtjs/tailwindcss'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -1,10 +1,9 @@
 <template>
-  <Page>
-    <h2>{{ config.name }}</h2>
-    <Card>
-      <nuxt-link class="btn btn-success" :to="`/${config.crudName}/form`">
-        Добавить {{ config.singleName }}
-      </nuxt-link>
+  <Page :title="config.name">
+    <nuxt-link class="btn btn-success" :to="`/${config.crudName}/form`">
+      Добавить {{ config.singleName }}
+    </nuxt-link>
+    <TablePageWrapper>
       <IcwtTable
         :columns="columns"
         :actions="actions"
@@ -12,7 +11,7 @@
         @onEdit="handleEdit"
         @onDelete="handleDelete"
       />
-    </Card>
+    </TablePageWrapper>
   </Page>
 </template>
 
@@ -25,7 +24,7 @@ export default {
   middleware: 'auth',
   components: {
     IcwtTable: () => import('@/components/IcwtTable'),
-    Card: () => import('@/components/Card'),
+    TablePageWrapper: () => import('@/components/TablePageWrapper'),
     Page: () => import('@/components/Page')
   },
   data: () => ({
